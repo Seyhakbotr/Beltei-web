@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'GoldlinesserifRegular';
+    src: url(fonts/GoldlinestrialRegular.otf);
+    
+}
+@font-face {
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+.title {
+    
+    color: #EEE3CB;
+    font-family: 'GoldlinesserifRegular', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5em;
+}
+body {
+    background-color: #B1B2FF;
+}
+hr {
+    width: 20%;
+    border-style: dotted none none;;
+    border-width: 7px;
+    border-color: #D2DAFF;
+}
+.container {
+    position: relative;
+    top: 3em;
+    width: 45em;
+    height: 25em;
+    padding-top: 2em;
+    
+    border: 0.5em double white;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background:rgb(59, 59, 59);
+   
+}
+.login {
+    
+    margin-left: 2em;
+    font-family: 'Roboto';
+    color: #D2DAFF;
+    font-weight: bold;
+    font: 1rem;
+
+}
+
