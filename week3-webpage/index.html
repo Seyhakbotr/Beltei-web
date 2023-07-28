@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = new Array (
+        new Array("ID","Student Name","Age"),
+        new Array("01","Apple","18"),
+        new Array("02","Banana","19"),
+        new Array("03","Coconut","20"),
+        new Array ("04","Mango","21"),
+            
+        );
+    document.write("<table border = 1");
+    for (let i = 0;i <= 4   ;i++)
+    {
+        document.write("<tr>");
+        for(let j = 0;j < 3;j++)
+        {
+            // document.write("Student["+i+"]["+j+"]) = " + student[i][j] + "&nbsp&nbsp&nbsp&nbsp");
+            document.write("<td>"+student[i][j] + "</td>");
+
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+    </script>
+    
+</body>
+</html>

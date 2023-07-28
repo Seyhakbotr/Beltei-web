@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <h1>Kilometer to miles</h1>
+    Kilometer  <input type="number" id="kilometer"><br><br>
+    <input type="button" onClick="calcKilo()" class="btn-primary btn-large" value="result">
+    <p>The Result is : <br>
+        <span id = "result1"></span>
+        <hr>
+        <br><br><br><br><br><br>
+        <h1>Miles to kilometers</h1>
+    Miles <input type="number" id="meter"><br><br>
+    <input type="button" onClick="calcMeter()" class="btn-primary btn-large" value="result">
+    <p>The Result is : <br>
+        <span id = "result2"></span>
+    </form>
+    <script>
+        let kilo,meter;
+        function calcKilo() {
+            kilo = document.getElementById("kilometer").value;
+            calc = parseFloat(kilo / 1.609).toFixed(2);
+            document.getElementById("result1").innerHTML = calc + " meters ";
+
+
+        }
+        function calcMeter() {
+            meter = document.getElementById("meter").value;
+            calc = parseFloat(meter * 1.609).toFixed(2);
+            document.getElementById("result2").innerHTML = calc + " kilometers ";
+        }
+
+       
+
+
+
+
+    </script>
+</body>
+</html>

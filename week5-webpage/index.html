@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <label for="cpp">C++</label>
+    <input type="number" id="cpp"><br>
+    <label for="html">HTML</label>
+    <input type="number" id="html"><br>
+    <label for="JS">JavaScript</label>
+    <input type="number" id="JS"><br>
+    <input type="button" onClick="calc()"  value="result">
+    <br>
+    <span id = "result1"></span>
+
+    </div>
+   <script>
+    function calc(){
+    let cpp = document.getElementById("cpp").value;
+    let html = document.getElementById("cpp").value;
+    let js = document.getElementById("JS").value;
+    let total = parseFloat(cpp) + parseFloat(html) + parseFloat(js);
+    let average = parseFloat(total / 3).toFixed(2);
+    
+    
+
+    if (average >= 50){
+        
+        document.getElementById("result1").innerHTML = "Total:" + total + "<br>" + "Average: " + average + "<br>" + "You passed";
+    } else {
+       
+        document.getElementById("result1").innerHTML = "Total:" + total + "<br>" + "Average: " + average + "<br>" + z;
+    }
+
+    }
+   </script>
+</body>
+</html>

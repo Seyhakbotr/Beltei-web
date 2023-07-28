@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body align="center">
+    <form>
+    <h1>Celcius to Fahrenheit</h1>
+    Celcius <input type="number" id="celcius"><br><br>
+    <input type="button" onClick="calcCelcius()" class="btn-primary btn-large" value="result">
+    <p>The Result is : <br>
+        <span id = "result1"></span>
+        <hr>
+        <br><br><br><br><br><br>
+    <h1>Fahrenheit to Celcius</h1>
+    
+    Fahrenheit <input type="number" id="fahren"><br><br>
+    <input type="button" onClick="calcFahren()" class="btn-primary btn-large" value="result">
+    <p>The Result is : <br>
+        <span id = "result2"></span>
+        <hr>
+        <br><br><br><br><br><br>
+    </form>
+    <script>
+        function calcCelcius() {
+           let getCelcius = document.getElementById("celcius").value;
+        tf = parseFloat((9/5) * getCelcius + 32).toFixed(2);
+        document.getElementById("result1").innerHTML = tf + " Fahrenheit ";
+        }
+       
+        function calcFahren(){
+        let calcFahren = document.getElementById("fahren").value;
+        tc = parseFloat((calcFahren - 32) * 5/9).toFixed(2);
+        document.getElementById("result2").innerHTML = tc + " celcius ";
+        }
+    </script>
+</body>
+</html>
